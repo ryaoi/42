@@ -6,7 +6,7 @@
 /*   By: ryaoi <ryaoi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 15:02:49 by ryaoi             #+#    #+#             */
-/*   Updated: 2016/11/06 14:49:57 by ryaoi            ###   ########.fr       */
+/*   Updated: 2016/11/07 19:38:13 by ryaoi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ char			*ft_strtrim(char const *s)
 	size_t		end;
 
 	begin = 0;
+	if (s == NULL)
+		return (no_string());
 	while ((s[begin] == ' ' || s[begin] == '\n' || s[begin] == '\t')
 			&& s[begin] != '\0')
 		begin++;
