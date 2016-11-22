@@ -6,7 +6,7 @@
 /*   By: ryaoi <ryaoi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 14:16:29 by ryaoi             #+#    #+#             */
-/*   Updated: 2016/11/12 16:29:18 by ryaoi            ###   ########.fr       */
+/*   Updated: 2016/11/22 19:33:53 by gmordele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,8 @@ int		check_str(char *stock)
 	int i;
 	int j;
 
+	if (stock == NULL)
+		return (0);
 	i = 0;
 	j = 0;
 	while (stock[i + j] != '\0')
